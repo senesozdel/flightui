@@ -4,23 +4,40 @@ import BookFlightBox from '../components/BookFlightBox'
 import FlightItem from '../components/FlightItem'
 import BlogPost from '../components/BlogPost'
 import Filter from '../components/Filter'
-import { getFlightData, getFlightDestinations } from '../dataRequests/DataRequests'
 import { useSelector, useDispatch } from 'react-redux'
-import { setDestinations } from '../features/flights/flightSlice'
+import { getFlightDestinations, setDestinationsDictionary } from '../features/destinations/destinationSlice'
 const Home = () => {
 
     const blogtypes = ["car", "hotel", "holiday"]
     const dispatch = useDispatch();
     const array = [1, 2, 3, 4, 5, 5, 5]
 
-    useEffect(() => {
-        
-        const fetchDestinations = async () => {
-            await getFlightDestinations((data) => dispatch(setDestinations(data)));
-        };
 
-        fetchDestinations();
-    }, [dispatch]); 
+    async function fetchFlightDestinations() {
+        let response = await dispatch(getFlightDestinations());
+        let returnArray = [];
+
+        response.payload.forEach(element => {
+            let singleDestination = { label: "", value: "" }
+            let country = element.country;
+            let iata = element.iata;
+            singleDestination.label = country;
+            singleDestination.value = iata;
+
+            returnArray.push(singleDestination)
+
+        });
+
+        dispatch(setDestinationsDictionary(returnArray))
+    }
+
+    useEffect(() => {
+
+        fetchFlightDestinations()
+
+    }, [])
+
+    // console.log(destinationsDictionary)
 
     return (
         <div className='bg-secondary-subtle d-flex flex-column gap-4'>
@@ -31,9 +48,9 @@ const Home = () => {
                     <div className='d-flex gap-2'>
                         <div className='w-75 d-flex flex-column gap-3'>
                             {
-                                array.map((i,index)=>
-                                
-                            <FlightItem key={index}/>
+                                array.map((i, index) =>
+
+                                    <FlightItem key={index} />
 
                                 )
                             }
