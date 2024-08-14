@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+First clone the project with flight-server =>https://github.com/senesozdel/flight-server . 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+npm i for downlading node modules. 
 
-## Available Scripts
+If any necassary packages you need downlaod them. 
 
-In the project directory, you can run:
+Home Page : 
 
-### `npm start`
+![home](https://github.com/user-attachments/assets/096238b4-637f-452a-8ada-3d85eb6a93e4)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Home Page Responsive:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![home-md](https://github.com/user-attachments/assets/4bc0eef2-fc4f-410d-833b-196cdcbeea77)
 
-### `npm test`
+Round-Trip Component:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![round-trip](https://github.com/user-attachments/assets/b9cec400-7797-453c-a86c-5bdfbe3ca3eb)
 
-### `npm run build`
+Loading Component:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![loading](https://github.com/user-attachments/assets/45f53814-7588-403a-997d-8197297e0137)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Filtered Flights:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![filtered](https://github.com/user-attachments/assets/86c691f2-970d-4b9c-8bd6-e2c4727ee91d)
 
-### `npm run eject`
+MyFlights Page:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![reservations](https://github.com/user-attachments/assets/105081e7-3bd8-4eb2-ba32-f13efa13d917)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+MyFlights Page Responsive:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![reservations-md](https://github.com/user-attachments/assets/fa9acb57-d839-4f58-881f-d45597a5acbe)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Successfully Added Reservation Message:
 
-## Learn More
+![message](https://github.com/user-attachments/assets/47e7e52c-1f5a-45be-97c4-738f351fc7ab)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+NoPage Page:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![no-page](https://github.com/user-attachments/assets/9e7373e9-8940-4289-83ec-dfa5015e820e)
 
-### Code Splitting
+MongoDb Compass:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![mongo-compass](https://github.com/user-attachments/assets/2a74ce84-4b02-4594-9e65-f73d6d1868a9)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
