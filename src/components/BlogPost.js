@@ -3,7 +3,8 @@ import { FaCar, FaUmbrellaBeach, FaHotel } from "react-icons/fa";
 
 const BlogPost = ({ blogtype }) => {
     return (
-        <>{blogtype &&
+        <>
+        {blogtype &&
             <div className={blogtype}>
                 {
                     blogtype == "car" ?
@@ -11,7 +12,7 @@ const BlogPost = ({ blogtype }) => {
                         <div className='d-flex flex-column gap-2'>
                             <FaCar className='fs-2 text-light' />
                             <h4 className='m-0 text-light'>
-                              Car Rentals
+                                Car Rentals
                             </h4>
                         </div>
 
@@ -31,8 +32,6 @@ const BlogPost = ({ blogtype }) => {
                                 </h4>
                             </div>
                 }
-
-
             </div>
         }
         </>
